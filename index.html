@@ -8,10 +8,17 @@
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
-   <div>
-    <video class="video-player" id="local-video" autoplay playsinline controls></video>
-    <video class="video-player" id="remote-video" autoplay playsinline controls></video>
+   <div class="container-fluid main">
+    <div class="row video-container d-flex align-items-center justify-content-center ">
+    <div class="col-6">
+    <video class="video-player w-100 h-100" id="local-video" autoplay playsinline controls></video>
+</div>
+<div class="col-6">
+    <video class="video-player w-100 h-100" id="remote-video" autoplay playsinline controls></video>
+</div>
    </div>
+</div>
+    <script src="/socket.io/socket.io.js"></script>
    <script src="./scripts.js"></script>
 </body>
 </html>
